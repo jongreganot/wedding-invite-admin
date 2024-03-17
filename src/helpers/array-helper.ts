@@ -5,9 +5,17 @@ export const orderBy = (items) => {
 
 export const filterItems = (items, query) => {
     return items.filter((item) => {
-        return (
-            item.firstName.toLowerCase().includes(query.toLowerCase()) ||
-            item.lastName.toLowerCase().includes(query.toLowerCase())
-        )
+        if (typeof(query) === "boolean") {
+            if (query === true)
+                return item.hasConfirmed;
+            else
+                return true;
+        }
+        else {
+            return (
+                item.firstName.toLowerCase().includes(query.toLowerCase()) ||
+                item.lastName.toLowerCase().includes(query.toLowerCase())
+            )
+        }
     });
 }
