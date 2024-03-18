@@ -111,11 +111,11 @@ class Home extends Component {
                             <div className="px-4">
                                 <div className="d-flex flex-row justify-content-between align-items-center">
                                     <p className="fs-small fw-500 mb-0">Total Count</p>
-                                    <p className="fs-small mb-0">{this.props.unfilteredGuests.length} guests</p>
+                                    <p className="fs-small mb-0">{this.props.unfilteredGuests.filter(g => g.isActive).length} guests</p>
                                 </div>
                                 <div className="d-flex flex-row justify-content-between align-items-center mt-2">
                                     <p className="fs-small fw-500 mb-0">Confirmed</p>
-                                    <p className="fs-small mb-0">{this.props.filteredGuests.filter(g => g.hasConfirmed).length} guests</p>
+                                    <p className="fs-small mb-0">{this.props.unfilteredGuests.filter(g => g.hasConfirmed).length} guests</p>
                                 </div>
                             </div>
                         </div>
