@@ -22,7 +22,7 @@ class Home extends Component {
 
         this.setState({
             guests: data.guests,
-            filteredGuests: orderBy(data.guests, "")
+            filteredGuests: orderBy(data.guests)
         });
     }
 
@@ -54,7 +54,7 @@ class Home extends Component {
     searchGuests = (e) => {
         let query = e.target.checked || e.target.value;
         this.setState({
-            filteredGuests: filterItems([...this.state.guests], query)
+            filteredGuests: orderBy(filterItems([...this.state.guests], query))
         });
     }
 
