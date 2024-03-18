@@ -20,20 +20,20 @@
     }
 }
 
-.guest-td-delete {
+.guest-td-actions {
     transition: left 400ms ease-in-out;
     position: absolute;
     left: 210px;
     pointer-events: none;
 
     &.active {
-        left: 160px;
+        left: 99px;
         pointer-events: all;
     }
 }
 
 @media (max-width: 390px) {
-    .guest-td-delete {
+    .guest-td-actions {
         left: 95px;
 
         &.active {

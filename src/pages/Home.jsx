@@ -5,60 +5,21 @@ import { staticData } from '../constants/static-data.ts';
 import $ from "jquery";
 import "../styles/home.scss";
 import { wait } from '@testing-library/user-event/dist/utils/index';
+import CustomLink from '../components/CustomLink.jsx';
 
 class Home extends Component {
-    state = { 
-        query: "",
-        guests: [],
-        filteredGuests: []
-    }
-
-    componentDidMount() {
-        this.fetchGuests();
-    }
-
-    fetchGuests = async () => {
-        let data = await fetchData("/guests");
-
-        this.setState({
-            guests: data.guests,
-            filteredGuests: orderBy(data.guests)
-        });
-    }
 
     deleteGuest = async (event, guest) => {
         let currentActiveRow = event.target.closest(".guest-row.active");
         $(currentActiveRow).addClass("deleted");
         await wait(600);
 
-        this.deleteFromList(guest);
+        this.props.deleteFromList(guest);
 
         event.stopPropagation();
     }
 
-    deleteFromList = async (guest) => {
-        let filteredGuests = [ ...this.state.filteredGuests ];
-        let fg = filteredGuests.find(fg => fg.userId === guest.userId);
-        let index = filteredGuests.indexOf(fg);
-        filteredGuests.splice(index, 1);
-
-        this.setState({filteredGuests});
-
-        let body = {
-            guestId: guest.userId
-        }
-
-        await postData("/remove", body);
-    }
-
-    searchGuests = (e) => {
-        let query = e.target.checked || e.target.value;
-        this.setState({
-            filteredGuests: orderBy(filterItems([...this.state.guests], query))
-        });
-    }
-
-    setActive = (e) => {
+    setActive = (e, guest) => {
         let parent = e.target.parentElement.parentElement;
         let currentActiveRow = parent.querySelector(".active");
         let self = e.target.parentElement;
@@ -69,7 +30,7 @@ class Home extends Component {
             let currentTds = currentActiveRow.querySelectorAll(".guest-td");
             currentTds.forEach(td => {
                 $(td).removeClass("active");
-                let tdDelete = td.querySelector(".guest-td-delete");
+                let tdDelete = td.querySelector(".guest-td-actions");
                 $(tdDelete).removeClass("active");
             });
         }
@@ -79,10 +40,12 @@ class Home extends Component {
             let tds = self.querySelectorAll(".guest-td");
             tds.forEach(td => {
                 $(td).addClass("active");
-                let tdDelete = td.querySelector(".guest-td-delete");
+                let tdDelete = td.querySelector(".guest-td-actions");
                 $(tdDelete).addClass("active");
             });
         }
+
+        this.props.changeSelectedGuest(guest);
     }
      
     render() { 
@@ -92,11 +55,11 @@ class Home extends Component {
                     <div className="col-md-7 col-12 p-md-5 p-1">
                         <div className="d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-md-between col-md-12 gap-2">
                             <div className="col-md-8 col-12">
-                                <input type="text" className="form-control fs-small" id="query" onChange={(e) => this.searchGuests(e)} placeholder="Search..."></input>
+                                <input type="text" className="form-control fs-small" id="query" onChange={(e) => this.props.searchGuests(e)} placeholder="Search..."></input>
                             </div>
                             <div className="d-flex flex-row align-items-center ps-1 gap-2">
                                 <p className="fs-small mb-0">Has Confirmed?</p>
-                                <input className="form-check-input mt-0" type="checkbox" value="" id="hasConfirmedCheck" onChange={(e) => this.searchGuests(e)}></input>
+                                <input className="form-check-input mt-0" type="checkbox" value="" id="hasConfirmedCheck" onChange={(e) => this.props.searchGuests(e)}></input>
                             </div>
                         </div>
                         <div className="overflow-y-scroll vh-60 mt-5">
@@ -111,9 +74,9 @@ class Home extends Component {
                                 </thead>
                                 <tbody className="table-group-divider">
                                     {
-                                        this.state.filteredGuests.map(guest => {
+                                        this.props.filteredGuests.map(guest => {
                                             return (
-                                                <tr key={`row-${guest.userId}`} className="guest-row" onClick={(e) => this.setActive(e)}>
+                                                <tr key={`row-${guest.userId}`} className="guest-row" onClick={(e) => this.setActive(e, guest)}>
                                                     <th scope="row"><p className="fs-small mb-0 text-center pe-none">{guest.userId}</p></th>
                                                     <td className="guest-td">
                                                         <p className="fs-small mb-0 pe-none">{guest.firstName}</p>
@@ -124,8 +87,14 @@ class Home extends Component {
                                                     <td className="guest-td">
                                                         <div className="d-flex flex-row align-items-center pe-none">
                                                             <p className="fs-small mb-0 text-center pe-none w-100">{guest.hasConfirmed ? "Yes" : ""}</p>
-                                                            <div className="guest-td-delete d-flex flex-row align-items-center justify-content-center cursor-pointer" onClick={(e) => this.deleteGuest(e, guest)} style={{height: "30px", width: "60px", backgroundColor: "red"}}>
-                                                                <p className="mb-0 fs-extra-small pe-none text-light">Remove</p>
+                                                            <div className="d-flex flex-row guest-td-actions">
+                                                                <div className="d-flex flex-row align-items-center justify-content-center" style={{height: "30px", width: "60px", backgroundColor: "#3a3a6c"}}>
+                                                                    <CustomLink linkName="Edit" />
+                                                                </div>
+                                                                
+                                                                <div className="d-flex flex-row align-items-center justify-content-center cursor-pointer" style={{height: "30px", width: "60px", backgroundColor: "#d93131"}} onClick={(e) => this.deleteGuest(e, guest)}>
+                                                                    <p className="mb-0 fs-extra-small pe-none text-light">Remove</p>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </td>
@@ -142,11 +111,11 @@ class Home extends Component {
                             <div className="px-4">
                                 <div className="d-flex flex-row justify-content-between align-items-center">
                                     <p className="fs-small fw-500 mb-0">Total Count</p>
-                                    <p className="fs-small mb-0">{this.state.filteredGuests.length} guests</p>
+                                    <p className="fs-small mb-0">{this.props.unfilteredGuests.length} guests</p>
                                 </div>
                                 <div className="d-flex flex-row justify-content-between align-items-center mt-2">
                                     <p className="fs-small fw-500 mb-0">Confirmed</p>
-                                    <p className="fs-small mb-0">{this.state.filteredGuests.filter(g => g.hasConfirmed).length} guests</p>
+                                    <p className="fs-small mb-0">{this.props.filteredGuests.filter(g => g.hasConfirmed).length} guests</p>
                                 </div>
                             </div>
                         </div>

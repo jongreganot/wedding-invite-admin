@@ -1,5 +1,5 @@
 export const staticData = {
-    "count": 142,
+    "count": 145,
     "guests": [
         {
             "userId": "7",
@@ -9,7 +9,8 @@ export const staticData = {
             "partnerId": "6",
             "hasEmailSent": true,
             "hasConfirmed": true,
-            "confirmedOn": "2024-03-04 13:03:22"
+            "confirmedOn": "2024-03-04 13:03:22",
+            "isActive": true
         },
         {
             "userId": "115",
@@ -17,9 +18,10 @@ export const staticData = {
             "lastName": "Fuentes",
             "suffix": "Ms.",
             "partnerId": null,
-            "hasEmailSent": false,
-            "hasConfirmed": false,
-            "confirmedOn": null
+            "hasEmailSent": true,
+            "hasConfirmed": true,
+            "confirmedOn": "2024-03-17 23:03:04",
+            "isActive": true
         },
         {
             "userId": "117",
@@ -29,7 +31,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "47",
@@ -39,7 +42,8 @@ export const staticData = {
             "partnerId": "46",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "122",
@@ -49,7 +53,19 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
+        },
+        {
+            "userId": "145",
+            "firstName": "Sharlene",
+            "lastName": "Sarabia",
+            "suffix": "Mrs.",
+            "partnerId": "138",
+            "hasEmailSent": false,
+            "hasConfirmed": false,
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "130",
@@ -59,7 +75,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "79",
@@ -69,7 +86,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "69",
@@ -79,7 +97,8 @@ export const staticData = {
             "partnerId": "70",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "110",
@@ -89,7 +108,8 @@ export const staticData = {
             "partnerId": "109",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "8",
@@ -99,7 +119,8 @@ export const staticData = {
             "partnerId": "9",
             "hasEmailSent": true,
             "hasConfirmed": true,
-            "confirmedOn": "2024-03-08 11:41:10"
+            "confirmedOn": "2024-03-08 11:41:10",
+            "isActive": true
         },
         {
             "userId": "62",
@@ -109,7 +130,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "54",
@@ -119,7 +141,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "75",
@@ -129,7 +152,8 @@ export const staticData = {
             "partnerId": "74",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "89",
@@ -139,7 +163,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "32",
@@ -149,7 +174,8 @@ export const staticData = {
             "partnerId": "33",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "131",
@@ -159,7 +185,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "113",
@@ -168,8 +195,9 @@ export const staticData = {
             "suffix": "Ms.",
             "partnerId": null,
             "hasEmailSent": false,
-            "hasConfirmed": false,
-            "confirmedOn": null
+            "hasConfirmed": true,
+            "confirmedOn": "2024-03-17 22:58:04",
+            "isActive": true
         },
         {
             "userId": "118",
@@ -179,17 +207,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
-        },
-        {
-            "userId": "135",
-            "firstName": "Kenneth",
-            "lastName": "Sarabia",
-            "suffix": "Rev.",
-            "partnerId": null,
-            "hasEmailSent": false,
-            "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "56",
@@ -198,8 +217,9 @@ export const staticData = {
             "suffix": "Mr.",
             "partnerId": null,
             "hasEmailSent": false,
-            "hasConfirmed": false,
-            "confirmedOn": null
+            "hasConfirmed": true,
+            "confirmedOn": "2024-03-18 06:59:09",
+            "isActive": true
         },
         {
             "userId": "104",
@@ -209,7 +229,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "139",
@@ -219,7 +240,8 @@ export const staticData = {
             "partnerId": "140",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "44",
@@ -229,7 +251,8 @@ export const staticData = {
             "partnerId": "45",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "10",
@@ -239,7 +262,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": true,
-            "confirmedOn": "2024-03-08 11:54:01"
+            "confirmedOn": "2024-03-08 11:54:01",
+            "isActive": true
         },
         {
             "userId": "82",
@@ -249,7 +273,8 @@ export const staticData = {
             "partnerId": "81",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "31",
@@ -259,7 +284,8 @@ export const staticData = {
             "partnerId": "30",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "58",
@@ -269,7 +295,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "65",
@@ -277,9 +304,10 @@ export const staticData = {
             "lastName": "Macaldo",
             "suffix": "Mr.",
             "partnerId": "66",
-            "hasEmailSent": false,
+            "hasEmailSent": true,
             "hasConfirmed": true,
-            "confirmedOn": "2024-03-17 22:09:43"
+            "confirmedOn": "2024-03-17 22:09:43",
+            "isActive": false
         },
         {
             "userId": "132",
@@ -289,7 +317,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "38",
@@ -299,7 +328,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "96",
@@ -309,7 +339,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "123",
@@ -319,7 +350,8 @@ export const staticData = {
             "partnerId": "124",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "81",
@@ -329,7 +361,8 @@ export const staticData = {
             "partnerId": "82",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "2",
@@ -339,7 +372,8 @@ export const staticData = {
             "partnerId": "1",
             "hasEmailSent": true,
             "hasConfirmed": true,
-            "confirmedOn": "2024-03-17 19:07:44"
+            "confirmedOn": "2024-03-17 19:07:44",
+            "isActive": true
         },
         {
             "userId": "120",
@@ -349,7 +383,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "21",
@@ -359,7 +394,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "40",
@@ -369,7 +405,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": true,
             "hasConfirmed": true,
-            "confirmedOn": "2024-03-11 20:44:40"
+            "confirmedOn": "2024-03-11 20:44:40",
+            "isActive": true
         },
         {
             "userId": "14",
@@ -379,7 +416,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "55",
@@ -389,7 +427,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "18",
@@ -399,7 +438,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "100",
@@ -409,17 +449,19 @@ export const staticData = {
             "partnerId": "99",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "138",
             "firstName": "Kenneth",
             "lastName": "Sarabia",
             "suffix": "Rev.",
-            "partnerId": null,
+            "partnerId": "145",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "108",
@@ -429,7 +471,8 @@ export const staticData = {
             "partnerId": "107",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "128",
@@ -439,7 +482,8 @@ export const staticData = {
             "partnerId": "127",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "98",
@@ -449,7 +493,8 @@ export const staticData = {
             "partnerId": "97",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "85",
@@ -459,7 +504,8 @@ export const staticData = {
             "partnerId": "86",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "95",
@@ -469,7 +515,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "124",
@@ -479,7 +526,8 @@ export const staticData = {
             "partnerId": "123",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "142",
@@ -489,7 +537,8 @@ export const staticData = {
             "partnerId": "141",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "25",
@@ -499,7 +548,8 @@ export const staticData = {
             "partnerId": "24",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": "2024-03-11 09:36:24"
+            "confirmedOn": "2024-03-11 09:36:24",
+            "isActive": true
         },
         {
             "userId": "12",
@@ -509,7 +559,8 @@ export const staticData = {
             "partnerId": "13",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "9",
@@ -519,7 +570,8 @@ export const staticData = {
             "partnerId": "8",
             "hasEmailSent": true,
             "hasConfirmed": true,
-            "confirmedOn": "2024-03-08 11:41:10"
+            "confirmedOn": "2024-03-08 11:41:10",
+            "isActive": true
         },
         {
             "userId": "53",
@@ -529,7 +581,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "97",
@@ -539,7 +592,8 @@ export const staticData = {
             "partnerId": "98",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "52",
@@ -549,7 +603,8 @@ export const staticData = {
             "partnerId": "51",
             "hasEmailSent": false,
             "hasConfirmed": true,
-            "confirmedOn": "2024-03-13 22:48:05"
+            "confirmedOn": "2024-03-13 22:48:05",
+            "isActive": true
         },
         {
             "userId": "27",
@@ -559,7 +614,8 @@ export const staticData = {
             "partnerId": "28",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "4",
@@ -569,7 +625,8 @@ export const staticData = {
             "partnerId": "5",
             "hasEmailSent": true,
             "hasConfirmed": true,
-            "confirmedOn": "2024-03-04 12:48:56"
+            "confirmedOn": "2024-03-04 12:48:56",
+            "isActive": true
         },
         {
             "userId": "111",
@@ -579,7 +636,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "26",
@@ -589,7 +647,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": true,
             "hasConfirmed": true,
-            "confirmedOn": "2024-03-13 18:57:05"
+            "confirmedOn": "2024-03-13 18:57:05",
+            "isActive": true
         },
         {
             "userId": "13",
@@ -599,7 +658,8 @@ export const staticData = {
             "partnerId": "12",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "127",
@@ -609,7 +669,8 @@ export const staticData = {
             "partnerId": "128",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "119",
@@ -619,7 +680,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "16",
@@ -629,7 +691,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "86",
@@ -639,7 +702,8 @@ export const staticData = {
             "partnerId": "85",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "80",
@@ -649,7 +713,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "72",
@@ -659,7 +724,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "76",
@@ -669,7 +735,8 @@ export const staticData = {
             "partnerId": "77",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "143",
@@ -679,7 +746,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "93",
@@ -689,7 +757,8 @@ export const staticData = {
             "partnerId": "94",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "45",
@@ -699,7 +768,8 @@ export const staticData = {
             "partnerId": "44",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "41",
@@ -709,7 +779,19 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": true,
             "hasConfirmed": true,
-            "confirmedOn": "2024-03-13 22:56:41"
+            "confirmedOn": "2024-03-13 22:56:41",
+            "isActive": true
+        },
+        {
+            "userId": "148",
+            "firstName": "Edgardo ",
+            "lastName": "Llanillo",
+            "suffix": "Mr.",
+            "partnerId": null,
+            "hasEmailSent": false,
+            "hasConfirmed": false,
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "17",
@@ -719,7 +801,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": true,
             "hasConfirmed": true,
-            "confirmedOn": "2024-03-12 20:55:07"
+            "confirmedOn": "2024-03-12 20:55:07",
+            "isActive": true
         },
         {
             "userId": "136",
@@ -729,7 +812,8 @@ export const staticData = {
             "partnerId": "136",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "133",
@@ -739,7 +823,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "6",
@@ -749,7 +834,8 @@ export const staticData = {
             "partnerId": "7",
             "hasEmailSent": true,
             "hasConfirmed": true,
-            "confirmedOn": "2024-03-04 13:03:21"
+            "confirmedOn": "2024-03-04 13:03:21",
+            "isActive": true
         },
         {
             "userId": "66",
@@ -757,9 +843,10 @@ export const staticData = {
             "lastName": "Macaldo",
             "suffix": "Mrs.",
             "partnerId": "65",
-            "hasEmailSent": false,
+            "hasEmailSent": true,
             "hasConfirmed": true,
-            "confirmedOn": "2024-03-17 22:09:43"
+            "confirmedOn": "2024-03-17 22:09:43",
+            "isActive": true
         },
         {
             "userId": "63",
@@ -769,7 +856,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "46",
@@ -779,7 +867,8 @@ export const staticData = {
             "partnerId": "47",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "50",
@@ -789,7 +878,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "36",
@@ -799,7 +889,8 @@ export const staticData = {
             "partnerId": "37",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "59",
@@ -809,7 +900,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": true,
             "hasConfirmed": true,
-            "confirmedOn": "2024-03-03 21:14:25"
+            "confirmedOn": "2024-03-03 21:14:25",
+            "isActive": true
         },
         {
             "userId": "137",
@@ -819,7 +911,8 @@ export const staticData = {
             "partnerId": "137",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "71",
@@ -828,8 +921,9 @@ export const staticData = {
             "suffix": "Mr.",
             "partnerId": null,
             "hasEmailSent": false,
-            "hasConfirmed": false,
-            "confirmedOn": null
+            "hasConfirmed": true,
+            "confirmedOn": "2024-03-17 23:09:29",
+            "isActive": true
         },
         {
             "userId": "20",
@@ -839,7 +933,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": true,
             "hasConfirmed": true,
-            "confirmedOn": "2024-03-17 11:43:21"
+            "confirmedOn": "2024-03-17 11:43:21",
+            "isActive": true
         },
         {
             "userId": "19",
@@ -849,7 +944,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "141",
@@ -859,7 +955,8 @@ export const staticData = {
             "partnerId": "142",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "73",
@@ -869,7 +966,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "102",
@@ -879,7 +977,8 @@ export const staticData = {
             "partnerId": "101",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "103",
@@ -889,7 +988,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "106",
@@ -899,7 +999,8 @@ export const staticData = {
             "partnerId": "105",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "88",
@@ -909,7 +1010,8 @@ export const staticData = {
             "partnerId": "87",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "125",
@@ -919,7 +1021,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "78",
@@ -929,7 +1032,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "61",
@@ -939,7 +1043,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "134",
@@ -949,7 +1054,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "33",
@@ -959,7 +1065,8 @@ export const staticData = {
             "partnerId": "32",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "34",
@@ -969,7 +1076,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "35",
@@ -979,7 +1087,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "114",
@@ -988,8 +1097,9 @@ export const staticData = {
             "suffix": "Ms.",
             "partnerId": null,
             "hasEmailSent": false,
-            "hasConfirmed": false,
-            "confirmedOn": null
+            "hasConfirmed": true,
+            "confirmedOn": "2024-03-17 23:42:25",
+            "isActive": true
         },
         {
             "userId": "42",
@@ -999,7 +1109,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "1",
@@ -1009,7 +1120,8 @@ export const staticData = {
             "partnerId": "2",
             "hasEmailSent": true,
             "hasConfirmed": true,
-            "confirmedOn": "2024-03-17 19:07:44"
+            "confirmedOn": "2024-03-17 19:07:44",
+            "isActive": true
         },
         {
             "userId": "77",
@@ -1019,7 +1131,8 @@ export const staticData = {
             "partnerId": "76",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "49",
@@ -1029,7 +1142,8 @@ export const staticData = {
             "partnerId": "48",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "105",
@@ -1039,7 +1153,8 @@ export const staticData = {
             "partnerId": "106",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "37",
@@ -1049,7 +1164,19 @@ export const staticData = {
             "partnerId": "36",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
+        },
+        {
+            "userId": "147",
+            "firstName": "Bernardita ",
+            "lastName": "Abanes",
+            "suffix": "Mrs.",
+            "partnerId": "146",
+            "hasEmailSent": false,
+            "hasConfirmed": false,
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "121",
@@ -1059,7 +1186,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "92",
@@ -1069,7 +1197,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": false
         },
         {
             "userId": "101",
@@ -1079,7 +1208,8 @@ export const staticData = {
             "partnerId": "102",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "51",
@@ -1089,7 +1219,8 @@ export const staticData = {
             "partnerId": "52",
             "hasEmailSent": false,
             "hasConfirmed": true,
-            "confirmedOn": "2024-03-13 22:48:05"
+            "confirmedOn": "2024-03-13 22:48:05",
+            "isActive": true
         },
         {
             "userId": "109",
@@ -1099,7 +1230,8 @@ export const staticData = {
             "partnerId": "110",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "112",
@@ -1109,7 +1241,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "144",
@@ -1119,7 +1252,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": false
         },
         {
             "userId": "64",
@@ -1128,8 +1262,9 @@ export const staticData = {
             "suffix": "Mrs.",
             "partnerId": null,
             "hasEmailSent": false,
-            "hasConfirmed": false,
-            "confirmedOn": null
+            "hasConfirmed": true,
+            "confirmedOn": "2024-03-18 17:58:30",
+            "isActive": true
         },
         {
             "userId": "87",
@@ -1139,7 +1274,8 @@ export const staticData = {
             "partnerId": "88",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "43",
@@ -1149,7 +1285,19 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
+        },
+        {
+            "userId": "146",
+            "firstName": "Jesus Renato",
+            "lastName": "Abanes",
+            "suffix": "Mr.",
+            "partnerId": "147",
+            "hasEmailSent": false,
+            "hasConfirmed": false,
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "5",
@@ -1159,7 +1307,8 @@ export const staticData = {
             "partnerId": "4",
             "hasEmailSent": true,
             "hasConfirmed": true,
-            "confirmedOn": "2024-03-04 12:48:55"
+            "confirmedOn": "2024-03-04 12:48:55",
+            "isActive": true
         },
         {
             "userId": "22",
@@ -1169,7 +1318,8 @@ export const staticData = {
             "partnerId": "23",
             "hasEmailSent": true,
             "hasConfirmed": true,
-            "confirmedOn": "2024-03-12 21:52:07"
+            "confirmedOn": "2024-03-12 21:52:07",
+            "isActive": true
         },
         {
             "userId": "107",
@@ -1179,7 +1329,8 @@ export const staticData = {
             "partnerId": "108",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "68",
@@ -1189,7 +1340,8 @@ export const staticData = {
             "partnerId": "67",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "90",
@@ -1199,7 +1351,8 @@ export const staticData = {
             "partnerId": "91",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "29",
@@ -1209,7 +1362,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "24",
@@ -1219,7 +1373,8 @@ export const staticData = {
             "partnerId": "25",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": "2024-03-11 09:36:24"
+            "confirmedOn": "2024-03-11 09:36:24",
+            "isActive": true
         },
         {
             "userId": "83",
@@ -1229,7 +1384,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "23",
@@ -1239,7 +1395,8 @@ export const staticData = {
             "partnerId": "22",
             "hasEmailSent": true,
             "hasConfirmed": true,
-            "confirmedOn": "2024-03-12 21:52:07"
+            "confirmedOn": "2024-03-12 21:52:07",
+            "isActive": true
         },
         {
             "userId": "30",
@@ -1249,7 +1406,8 @@ export const staticData = {
             "partnerId": "31",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "15",
@@ -1259,7 +1417,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "126",
@@ -1269,7 +1428,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": false
         },
         {
             "userId": "116",
@@ -1279,7 +1439,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "28",
@@ -1289,7 +1450,8 @@ export const staticData = {
             "partnerId": "27",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "67",
@@ -1299,7 +1461,8 @@ export const staticData = {
             "partnerId": "68",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "11",
@@ -1309,7 +1472,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": true,
-            "confirmedOn": "2024-03-08 11:40:24"
+            "confirmedOn": "2024-03-08 11:40:24",
+            "isActive": true
         },
         {
             "userId": "91",
@@ -1319,7 +1483,8 @@ export const staticData = {
             "partnerId": "90",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "84",
@@ -1329,7 +1494,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "94",
@@ -1339,7 +1505,8 @@ export const staticData = {
             "partnerId": "93",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "140",
@@ -1349,7 +1516,8 @@ export const staticData = {
             "partnerId": "139",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "57",
@@ -1359,7 +1527,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": true,
             "hasConfirmed": true,
-            "confirmedOn": "2024-03-06 10:23:05"
+            "confirmedOn": "2024-03-06 10:23:05",
+            "isActive": true
         },
         {
             "userId": "60",
@@ -1369,7 +1538,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": true,
             "hasConfirmed": true,
-            "confirmedOn": "2024-03-08 15:13:12"
+            "confirmedOn": "2024-03-08 15:13:12",
+            "isActive": true
         },
         {
             "userId": "48",
@@ -1379,7 +1549,8 @@ export const staticData = {
             "partnerId": "49",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "74",
@@ -1389,7 +1560,8 @@ export const staticData = {
             "partnerId": "75",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "70",
@@ -1399,7 +1571,8 @@ export const staticData = {
             "partnerId": "69",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "129",
@@ -1409,7 +1582,8 @@ export const staticData = {
             "partnerId": null,
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         },
         {
             "userId": "99",
@@ -1419,7 +1593,8 @@ export const staticData = {
             "partnerId": "100",
             "hasEmailSent": false,
             "hasConfirmed": false,
-            "confirmedOn": null
+            "confirmedOn": null,
+            "isActive": true
         }
     ]
 };
