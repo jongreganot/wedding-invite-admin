@@ -1,0 +1,33 @@
+.guest-td {
+    left: 0;
+    transition: left 400ms ease-in-out;
+    position: relative;
+
+    &.active {
+        left: -50px;
+    }
+}
+
+.guest-row {
+    left: 0;
+    opacity: 1;
+    transition: all 600ms cubic-bezier(0.215, 0.610, 0.355, 1);
+    position: relative;
+
+    &.deleted {
+        left: -200px;
+        opacity: 0;
+    }
+}
+
+.guest-td-delete {
+    transition: left 400ms ease-in-out;
+    position: absolute;
+    left: 210px;
+    pointer-events: none;
+
+    &.active {
+        left: 160px;
+        pointer-events: all;
+    }
+}

@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import { fetchData } from '../services/services.ts';
+import { fetchData, postData } from '../services/services.ts';
 import { filterItems, orderBy } from '../helpers/array-helper.ts';
 import { staticData } from '../constants/static-data.ts';
+import $ from "jquery";
+import "../styles/home.scss";
+import { wait } from '@testing-library/user-event/dist/utils/index';
 
 class Home extends Component {
     state = { 
@@ -15,7 +18,7 @@ class Home extends Component {
     }
 
     fetchGuests = async () => {
-        let data = await fetchData("/guests");//staticData; //await fetchData("/guests");
+        let data = await fetchData("/guests");
 
         this.setState({
             guests: data.guests,
@@ -23,11 +26,63 @@ class Home extends Component {
         });
     }
 
+    deleteGuest = async (event, guest) => {
+        let currentActiveRow = event.target.closest(".guest-row.active");
+        $(currentActiveRow).addClass("deleted");
+        await wait(600);
+
+        this.deleteFromList(guest);
+
+        event.stopPropagation();
+    }
+
+    deleteFromList = async (guest) => {
+        let filteredGuests = [ ...this.state.filteredGuests ];
+        let fg = filteredGuests.find(fg => fg.userId === guest.userId);
+        let index = filteredGuests.indexOf(fg);
+        filteredGuests.splice(index, 1);
+
+        this.setState({filteredGuests});
+
+        let body = {
+            guestId: guest.userId
+        }
+
+        await postData("/remove", body);
+    }
+
     searchGuests = (e) => {
         let query = e.target.checked || e.target.value;
         this.setState({
-            filteredGuests: filterItems(this.state.guests, query)
+            filteredGuests: filterItems([...this.state.guests], query)
         });
+    }
+
+    setActive = (e) => {
+        let parent = e.target.parentElement.parentElement;
+        let currentActiveRow = parent.querySelector(".active");
+        let self = e.target.parentElement;
+
+        $(currentActiveRow).removeClass("active");
+
+        if (currentActiveRow) {
+            let currentTds = currentActiveRow.querySelectorAll(".guest-td");
+            currentTds.forEach(td => {
+                $(td).removeClass("active");
+                let tdDelete = td.querySelector(".guest-td-delete");
+                $(tdDelete).removeClass("active");
+            });
+        }
+
+        if (currentActiveRow !== self) {
+            $(self).addClass("active");
+            let tds = self.querySelectorAll(".guest-td");
+            tds.forEach(td => {
+                $(td).addClass("active");
+                let tdDelete = td.querySelector(".guest-td-delete");
+                $(tdDelete).addClass("active");
+            });
+        }
     }
      
     render() { 
@@ -58,11 +113,22 @@ class Home extends Component {
                                     {
                                         this.state.filteredGuests.map(guest => {
                                             return (
-                                                <tr key={`row-${guest.userId}`}>
-                                                    <th scope="row"><p className="fs-small mb-0 text-center">{guest.userId}</p></th>
-                                                    <td><p className="fs-small mb-0">{guest.firstName}</p></td>
-                                                    <td><p className="fs-small mb-0">{guest.lastName}</p></td>
-                                                    <td><p className="fs-small mb-0 text-center">{guest.hasConfirmed ? "Yes" : ""}</p></td>
+                                                <tr key={`row-${guest.userId}`} className="guest-row" onClick={(e) => this.setActive(e)}>
+                                                    <th scope="row"><p className="fs-small mb-0 text-center pe-none">{guest.userId}</p></th>
+                                                    <td className="guest-td">
+                                                        <p className="fs-small mb-0 pe-none">{guest.firstName}</p>
+                                                    </td>
+                                                    <td className="guest-td">
+                                                        <p className="fs-small mb-0 pe-none">{guest.lastName}</p>
+                                                    </td>
+                                                    <td className="guest-td">
+                                                        <div className="d-flex flex-row align-items-center pe-none">
+                                                            <p className="fs-small mb-0 text-center pe-none w-100">{guest.hasConfirmed ? "Yes" : ""}</p>
+                                                            <div className="guest-td-delete d-flex flex-row align-items-center justify-content-center cursor-pointer" onClick={(e) => this.deleteGuest(e, guest)} style={{height: "30px", width: "60px", backgroundColor: "red"}}>
+                                                                <p className="mb-0 fs-extra-small pe-none text-light">Remove</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
                                                 </tr>
                                             )
                                         })

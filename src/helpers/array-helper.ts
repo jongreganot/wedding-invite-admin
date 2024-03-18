@@ -1,6 +1,6 @@
 
 export const orderBy = (items) => {
-    return items.sort((a, b) => a.userId - b.userId);
+    return items.filter(i => i.isActive).sort((a, b) => a.userId - b.userId);
 }
 
 export const filterItems = (items, query) => {
