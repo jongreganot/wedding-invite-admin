@@ -31,3 +31,13 @@
         pointer-events: all;
     }
 }
+
+@media (max-width: 390px) {
+    .guest-td-delete {
+        left: 95px;
+
+        &.active {
+            left: 78px;
+        }
+    }
+}

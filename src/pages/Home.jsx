@@ -99,7 +99,7 @@ class Home extends Component {
                                 <input className="form-check-input mt-0" type="checkbox" value="" id="hasConfirmedCheck" onChange={(e) => this.searchGuests(e)}></input>
                             </div>
                         </div>
-                        <div className="overflow-y-auto vh-60 mt-5">
+                        <div className="overflow-y-scroll vh-60 mt-5">
                             <table className="table">
                                 <thead>
                                     <tr>
