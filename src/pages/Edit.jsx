@@ -43,6 +43,10 @@ class Edit extends React.Component {
         }
     }
 
+    isValid = () => {
+        return this.state.guest.firstName !== "" && this.state.guest.lastName !== "" && this.state.guest.suffix !== "";
+    }
+
     render () {
         return (
             <div className="container px-md-4 px-1 my-md-5 my-1 col-12">
@@ -50,7 +54,7 @@ class Edit extends React.Component {
                     <input type="text" className="form-control fs-small" id="query" placeholder="First Name" onChange={this.handleFirstNameChange} value={this.state.guest.firstName}></input>
                     <input type="text" className="form-control fs-small mt-4" id="query" placeholder="Last Name" onChange={this.handleLastNameChange} value={this.state.guest.lastName}></input>
                     <input type="text" className="form-control fs-small mt-4" id="query" placeholder="Suffix" onChange={this.handleSuffixChange} value={this.state.guest.suffix}></input>
-                    <button className="btn btn-primary mt-4" onClick={this.submit}>
+                    <button className="btn btn-primary mt-4 p-0" onClick={this.submit}>
                         <CustomLink linkText="Submit"
                                     linkName="Home" />
                     </button>
