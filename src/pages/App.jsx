@@ -25,7 +25,7 @@ class App extends React.Component {
         this.fetchGuests();
     }
 
-    addGuest = (guest) => {
+    addGuest = async (guest) => {
         guest.userId = getId(this.state.unfilteredGuests);
         guest.partnerId = null;
         guest.hasEmailSent = false;
@@ -36,6 +36,11 @@ class App extends React.Component {
         unfilteredGuests.push(guest);
 
         this.setState({unfilteredGuests}, this.updateFilteredGuests);
+        
+        let body = {
+            guest
+        };
+        await postData("/addguest", body);
     }
 
     changeSelectedGuest = (guest) => {
