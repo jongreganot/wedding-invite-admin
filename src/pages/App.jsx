@@ -11,6 +11,7 @@ import {
 import { staticData } from "../constants/static-data.ts";
 import { fetchData, postData } from '../services/services.ts';
 import { filterItems, orderBy } from '../helpers/array-helper.ts';
+import { getId } from "../services/guest-repository.ts";
 
 class App extends React.Component {
     state = {
@@ -24,6 +25,19 @@ class App extends React.Component {
         this.fetchGuests();
     }
 
+    addGuest = (guest) => {
+        guest.userId = getId(this.state.unfilteredGuests);
+        guest.partnerId = null;
+        guest.hasEmailSent = false;
+        guest.hasConfirmed = false;
+        guest.confirmedOn = null;
+        guest.isActive = true;
+        let unfilteredGuests = [ ...this.state.unfilteredGuests ];
+        unfilteredGuests.push(guest);
+
+        this.setState({unfilteredGuests}, this.updateFilteredGuests);
+    }
+
     changeSelectedGuest = (guest) => {
         this.setState({
             selectedGuest: guest
@@ -31,12 +45,12 @@ class App extends React.Component {
     }
 
     deleteFromList = async (guest) => {
-        let filteredGuests = [ ...this.state.filteredGuests ];
-        let fg = filteredGuests.find(fg => fg.userId === guest.userId);
-        let index = filteredGuests.indexOf(fg);
-        filteredGuests.splice(index, 1);
+        let unfilteredGuests = [ ...this.state.unfilteredGuests ];
+        let fg = unfilteredGuests.find(fg => fg.userId === guest.userId);
+        let index = unfilteredGuests.indexOf(fg);
+        unfilteredGuests.splice(index, 1);
 
-        this.setState({filteredGuests});
+        this.setState({unfilteredGuests}, this.updateFilteredGuests);
 
         let body = {
             guestId: guest.userId
@@ -46,7 +60,7 @@ class App extends React.Component {
     }
 
     fetchGuests = async () => {
-        let data = await fetchData("/guests");
+        let data = staticData; //await fetchData("/guests");
 
         this.setState({
             unfilteredGuests: data.guests,
@@ -75,6 +89,12 @@ class App extends React.Component {
         await postData("/update", body);
     }
 
+    updateFilteredGuests = () => {
+        this.setState({
+            filteredGuests: orderBy(this.state.unfilteredGuests)
+        });
+    }
+
     render () {
         return (
             <Router>
@@ -91,6 +111,10 @@ class App extends React.Component {
                             path="/wedding-invite-admin/edit"
                             element={<Edit guest={this.state.selectedGuest}
                                             updateGuest={this.updateGuest} />}></Route>
+
+                    <Route exact
+                            path="/wedding-invite-admin/add"
+                            element={<Edit addGuest={this.addGuest} />}></Route>
                 </Routes>
             </Router>
         )

@@ -6,6 +6,7 @@ import $ from "jquery";
 import "../styles/home.scss";
 import { wait } from '@testing-library/user-event/dist/utils/index';
 import CustomLink from '../components/CustomLink.jsx';
+import AddLink from '../components/AddLink.jsx';
 
 class Home extends Component {
 
@@ -62,7 +63,10 @@ class Home extends Component {
                                 <input className="form-check-input mt-0" type="checkbox" value="" id="hasConfirmedCheck" onChange={(e) => this.props.searchGuests(e)}></input>
                             </div>
                         </div>
-                        <div className="overflow-y-scroll vh-60 mt-5">
+                        <div className="mt-md-5 d-flex flex-row justify-content-end pe-3 cursor-pointer" onClick={this.props.addGuest}>
+                            <AddLink />
+                        </div>
+                        <div className="overflow-y-scroll vh-60 mt-3">
                             <table className="table">
                                 <thead>
                                     <tr>
