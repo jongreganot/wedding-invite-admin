@@ -63,7 +63,7 @@ class Home extends Component {
                                 <input className="form-check-input mt-0" type="checkbox" value="" id="hasConfirmedCheck" onChange={(e) => this.props.searchGuests(e)}></input>
                             </div>
                         </div>
-                        <div className="mt-md-5 d-flex flex-row justify-content-end pe-md-3 cursor-pointer" onClick={this.props.addGuest}>
+                        <div className="mt-md-5 d-flex flex-row justify-content-end cursor-pointer" onClick={this.props.addGuest}>
                             <AddLink />
                         </div>
                         <div className="overflow-y-scroll vh-60 mt-3">
@@ -91,14 +91,16 @@ class Home extends Component {
                                                     <td className="guest-td">
                                                         <div className="d-flex flex-row align-items-center pe-none">
                                                             <p className="fs-small mb-0 text-center pe-none w-100">{guest.hasConfirmed ? "Yes" : ""}</p>
-                                                            <div className="d-flex flex-row guest-td-actions">
-                                                                <div className="d-flex flex-row align-items-center justify-content-center" style={{height: "30px", width: "60px", backgroundColor: "#3a3a6c"}}>
-                                                                    <CustomLink linkName="Edit" />
-                                                                </div>
-                                                                
-                                                                <div className="d-flex flex-row align-items-center justify-content-center cursor-pointer" style={{height: "30px", width: "60px", backgroundColor: "#d93131"}} onClick={(e) => this.deleteGuest(e, guest)}>
-                                                                    <p className="mb-0 fs-extra-small pe-none text-light">Remove</p>
-                                                                </div>
+                                                        </div>
+                                                    </td>
+                                                    <td className="guest-td p-0">
+                                                        <div className="d-flex flex-row align-items-center h-100 guest-td-actions">
+                                                            <div className="d-flex flex-row align-items-center justify-content-center" style={{height: "30px", width: "60px", backgroundColor: "#3a3a6c"}}>
+                                                                <CustomLink linkName="Edit" />
+                                                            </div>
+                                                            
+                                                            <div className="d-flex flex-row align-items-center justify-content-center cursor-pointer" style={{height: "30px", width: "60px", backgroundColor: "#d93131"}} onClick={(e) => this.deleteGuest(e, guest)}>
+                                                                <p className="mb-0 fs-extra-small pe-none text-light">Remove</p>
                                                             </div>
                                                         </div>
                                                     </td>

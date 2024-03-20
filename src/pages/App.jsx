@@ -65,7 +65,7 @@ class App extends React.Component {
     }
 
     fetchGuests = async () => {
-        let data = await fetchData("/guests");//staticData; //await fetchData("/guests");
+        let data = staticData;//staticData; //await fetchData("/guests");
 
         this.setState({
             unfilteredGuests: data.guests,

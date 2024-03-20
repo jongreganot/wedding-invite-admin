@@ -27,7 +27,7 @@
     pointer-events: none;
 
     &.active {
-        left: 99px;
+        left: -70px;
         pointer-events: all;
     }
 }
@@ -43,7 +43,7 @@
         left: 95px;
 
         &.active {
-            left: 78px;
+            left: -9px;
         }
     }
 
