@@ -121,7 +121,7 @@ class Home extends Component {
                                 </div>
                                 <div className="d-flex flex-row justify-content-between align-items-center mt-2">
                                     <p className="fs-small fw-500 mb-0">Confirmed</p>
-                                    <p className="fs-small mb-0">{this.props.unfilteredGuests.filter(g => g.hasConfirmed).length} guests</p>
+                                    <p className="fs-small mb-0">{this.props.unfilteredGuests.filter(g => g.isActive && g.hasConfirmed).length} guests</p>
                                 </div>
                             </div>
                         </div>
